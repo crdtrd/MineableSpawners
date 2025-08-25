@@ -10,7 +10,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.drtdrc.mineablespawners.Mineablespawners"
+      "com.drtdrc.mineablespawners.MineableSpawners"
     ]
   },
   "mixins": [
