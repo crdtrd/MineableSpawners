@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mineablespawners",
+  "version": "${version}",
+  "name": "MineableSpawners",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mineablespawners/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.drtdrc.mineablespawners.client.MineablespawnersClient"
+    ],
+    "main": [
+      "com.drtdrc.mineablespawners.Mineablespawners"
+    ]
+  },
+  "mixins": [
+    "mineablespawners.mixins.json",
+    {
+      "config": "mineablespawners.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
