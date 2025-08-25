@@ -7,22 +7,14 @@
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/mineablespawners/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "com.drtdrc.mineablespawners.client.MineablespawnersClient"
-    ],
     "main": [
       "com.drtdrc.mineablespawners.Mineablespawners"
     ]
   },
   "mixins": [
-    "mineablespawners.mixins.json",
-    {
-      "config": "mineablespawners.client.mixins.json",
-      "environment": "client"
-    }
+    "mineablespawners.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
