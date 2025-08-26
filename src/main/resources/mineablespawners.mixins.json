@@ -4,6 +4,7 @@
   "package": "com.drtdrc.mineablespawners.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "SpawnerBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
