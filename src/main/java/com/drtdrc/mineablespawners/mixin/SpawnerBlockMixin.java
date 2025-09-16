@@ -23,9 +23,9 @@ public class SpawnerBlockMixin {
     boolean checkTool(boolean dropExperience, BlockState state, ServerWorld world, BlockPos pos, ItemStack tool) {
 
         ItemEnchantmentsComponent comp = tool.get(DataComponentTypes.ENCHANTMENTS);
-        return comp != null
+        boolean shouldDropExperience = comp != null
                 && comp.getEnchantments().stream()
-                .anyMatch(entry -> entry.matchesKey(Enchantments.SILK_TOUCH) && comp.getLevel(entry) > 0);
+                .noneMatch(entry -> entry.matchesKey(Enchantments.SILK_TOUCH) && comp.getLevel(entry) > 0);
+        return shouldDropExperience;
     }
-
 }
