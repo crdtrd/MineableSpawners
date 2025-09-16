@@ -3,10 +3,13 @@
   "id": "mineablespawners",
   "version": "${version}",
   "name": "MineableSpawners",
-  "description": "",
-  "authors": [],
-  "contact": {},
-  "license": "All-Rights-Reserved",
+  "description": "Makes spawners harvestable with a silk touch pickaxe. Build the mob grinder of your dreams!",
+  "icon": "assets/mineablespawners/icon.png",
+  "authors": ["crdtrd"],
+  "contact": {
+    "issues": "https://github.com/crdtrd/MineableSpawners/issues"
+  },
+  "license": "MIT",
   "environment": "*",
   "entrypoints": {
     "main": [
